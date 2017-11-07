@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Written by Eric Crosson
 // 2017-11-07
 
