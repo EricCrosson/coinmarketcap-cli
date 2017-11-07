@@ -1,7 +1,7 @@
 {
     "name": "coinmarketcap-cli",
     "version": "0.1.2",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "description": "Command-line interface to coinmarketcap.com",
     "keywords": [
         "coinmarketcap",
@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "cli-table2": "^0.2.0",
-        "coinmarketcap-cli-api": "^0.1.4",
+        "coinmarketcap-cli-api": "^0.2.1",
         "lodash": "^4.17.4"
     },
     "author": "Eric Crosson",

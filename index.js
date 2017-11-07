@@ -7,7 +7,7 @@ const Table = require('cli-table2');
 const coinmarketcap = require('coinmarketcap-cli-api');
 
 const args = process.argv;
-const coin = args[2];
+const coin = args.splice(2,args.length).join(' ');
 
 // returns a table object
 function tableize(tableData) {
