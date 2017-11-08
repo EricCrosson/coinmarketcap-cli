@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "cli-table2": "^0.2.0",
-        "coinmarketcap-cli-api": "^0.2.1",
+        "coinmarketcap-cli-api": ">=1.0.0",
         "lodash": "^4.17.4"
     },
     "author": "Eric Crosson",
