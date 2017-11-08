@@ -29,13 +29,16 @@ function displayTable(table) {
 
 function main() {
 
-    market = '';
-    marketcap = '';
+    market = [];
+    marketcap = {};
     promises = [];
 
     promises.push(coinmarketcap.getMarkets(coin)
                   .then(function(markets) {
-                      market = markets
+                      _.each(markets, function(marketData, index) {
+                          if (marketData['Volume (%)'] < 1) return;
+                          market.push(marketData)
+                      });
                   }));
     promises.push(coinmarketcap.getMarketCap(coin)
                   .then(function(marketcaps) {
@@ -44,8 +47,8 @@ function main() {
 
     Promise.all(promises)
         .then(function() {
-            displayTable(market)
-            displayTable(marketcap)
+            displayTable(market);
+            console.log(`Total market cap: ${marketcap[0]['Market cap']}`);
         })
 }
 
