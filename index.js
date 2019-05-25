@@ -3,7 +3,7 @@
 // 2017-11-07
 
 const _ = require('lodash');
-const Table = require('cli-table2');
+const Table = require('cli-table3');
 const coinmarketcap = require('coinmarketcap-cli-api');
 
 const args = process.argv;
